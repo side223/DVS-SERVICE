@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700&display=swap');
+
+.testoBase{
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  margin: 0px;
+}
+
+.navbar{
+  width: 100%;
+  height: 4rem;
+  background-color: #b40000;
+  display: flex;
+  align-items: center;
+}
+
+#menuOpen{
+  width: 75%;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  visibility: visible;
+}
+
+#menuOpen:hover{
+  opacity: 50%;
+}
+
+#menuClose{
+  width: 75%;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  visibility: hidden;
+}
+
+#menuClose:hover{
+  opacity: 50%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b40000;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidebarLink {
+    padding-left: 1rem ;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  
+  .sidebarLink:hover {
+    color: black;
+    border-left: solid 5px white;
+  }
+  .navCurt{
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .closeBtn:hover{
+    color: black;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
