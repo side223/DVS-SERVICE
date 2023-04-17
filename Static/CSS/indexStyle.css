@@ -18,15 +18,14 @@ body{
 
 #menuOpen{
   width: 75%;
-  transition: 0.5s;
+  transition: 0.3s;
   cursor: pointer;
   position: relative;
-  z-index: 2;
   visibility: visible;
 }
 
 #menuOpen:hover{
-  opacity: 50%;
+  opacity: 60%;
 }
 
 #menuClose{
@@ -39,7 +38,7 @@ body{
 }
 
 #menuClose:hover{
-  opacity: 50%;
+  
 }
 
 .sidenav {
@@ -55,6 +54,14 @@ body{
     transition: 0.5s;
   }
   
+  .logo{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: x-large;
+    padding-left: 1rem;
+  }
+
   .sidebarLink {
     padding-left: 1rem ;
     margin-bottom: 3rem;
@@ -71,7 +78,7 @@ body{
     border-left: solid 5px white;
   }
   .navCurt{
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-left: 1rem;
   }
   
@@ -80,7 +87,7 @@ body{
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    padding-top: 1vh;
     text-decoration: none;
     color: white;
     transition: 0.5s;
