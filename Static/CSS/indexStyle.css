@@ -25,7 +25,7 @@ body{
 }
 
 #menuOpen:hover{
-  opacity: 60%;
+  scale: 110%;
 }
 
 #menuClose{
@@ -38,7 +38,8 @@ body{
 }
 
 #menuClose:hover{
-  
+  background-color: white;
+  border-radius: 20px;
 }
 
 .sidenav {
