@@ -132,6 +132,11 @@ body{
     height: 100vh;
     background-color: #ffffff;
   }
+
+  .dovesiamo{
+    height: 120vh;
+    background-color: #b40000;
+  }
   
   .contattiGrid{
     display: flex;
@@ -139,6 +144,33 @@ body{
     align-items: center;
     justify-content: center;
   }
+
+  .IconCont{
+    width: 3rem;
+    padding-right: 2rem;
+  }
+
+  .contatto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+
+  .frameMappa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+
+  #mappa{
+    width: 80%;
+    height: 80vh;
+  }
+
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s;
