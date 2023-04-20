@@ -6,6 +6,7 @@
 
 body{
   margin: 0px;
+  box-sizing: border-box;
 }
 
 .navbar{
@@ -14,6 +15,7 @@ body{
   background-color: #b40000;
   display: flex;
   align-items: center;
+  position: fixed;
 }
 
 #menuOpen{
@@ -25,7 +27,7 @@ body{
 }
 
 #menuOpen:hover{
-  scale: 110%;
+  scale: 115%;
 }
 
 #menuClose{
@@ -91,13 +93,52 @@ body{
     padding-top: 1vh;
     text-decoration: none;
     color: white;
-    transition: 0.5s;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .closeBtn:hover{
-    color: black;
+    scale: 115%;
+  }
+
+  .logoHome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 3rem;
+  }
+
+  .intro{
+    background-image: url(/Static/Images/pexels-manuel-geissinger-325229.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position:center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chisiamo{
+    height: 100vh;
+    background-color: #ffffff;
+  }
+
+  .contatti{
+    height: 100vh;
+    background-color: #ffffff;
   }
   
+  .contattiGrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s;
