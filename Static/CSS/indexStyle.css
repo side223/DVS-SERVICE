@@ -11,7 +11,7 @@ body{
 
 .navbar{
   width: 100%;
-  height: 4rem;
+  height: 6rem;
   background-color: #b40000;
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@ body{
   }
 
   .chisiamo{
-    height: 100vh;
+    height: fit-content;
     background-color: #ffffff;
   }
 
@@ -134,8 +134,8 @@ body{
   }
 
   .dovesiamo{
-    height: 120vh;
-    background-color: #b40000;
+    height: fit-content;
+    background-color: white;
   }
   
   .contattiGrid{
@@ -171,6 +171,12 @@ body{
     height: 80vh;
   }
 
+  .aligned{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s;
@@ -182,3 +188,23 @@ body{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  #footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #b40000;
+    height: 6rem;
+}
+
+.testoCopyright{
+    text-align: center;
+    font-size: 30px;
+}
+
+.copyright{
+    color: white;
+    font-size: small;
+    text-align: center;
+}
