@@ -179,8 +179,19 @@ body{
 
   video{
     border: solid 2px black;
-    margin-top: 5%
-    
+  }
+
+  .videoCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .serviziGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center
+    flex-direction: column;
   }
 
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
