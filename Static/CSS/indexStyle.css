@@ -11,7 +11,7 @@ body{
 
 .navbar{
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   background-color: #b40000;
   display: flex;
   align-items: center;
@@ -114,13 +114,32 @@ body{
   }
 
   .intro{
-    background-image: url(/Static/Images/pexels-manuel-geissinger-325229.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 85vh;
     background-position:center ;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .introChi{
+    background-image: url(/Static/Images/Bari3.jpg);
+  }
+
+  .introDov{
+    background-image: url(/Static/Images/Bari3.jpg);
+  }
+
+  .introSer{
+    background-image: url(/Static/Images/pexels-manuel-geissinger-325229.jpg);
+  }
+
+  .introInd{
+    background-image: url(/Static/Images/pexels-manuel-geissinger-325229.jpg);
+  }
+
+  .introCon{
+    background-image: url(/Static/Images/pexels-manuel-geissinger-325229.jpg);
   }
 
   .chisiamo{
@@ -129,7 +148,7 @@ body{
   }
 
   .contatti{
-    height: 100vh;
+    height: fit-content;
     background-color: #ffffff;
   }
 
@@ -167,7 +186,7 @@ body{
   }
 
   #mappa{
-    width: 80%;
+    width: 100%;
     height: 80vh;
   }
 
