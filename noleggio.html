@@ -7,54 +7,56 @@
     <title>DVS-SERVICE srls</title>
     <link rel="stylesheet" href="/Static/CSS/indexStyle.css">
     <script src="/Static/Javascript/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <!--Navbar-->
     <div class="navbar">
-        <span style="padding-left: 1rem;display: flex; align-items: center; justify-content: center;" onclick="openNav()"><img id="menuOpen" src="/Static/Images/menuIcon.png" alt=""></a></span>
-        <a style="display: flex; align-items: center;" href="index.html" class="testoBase logo"><img style="height: 5rem;" src="/Static/Images/DVSlogo2022.png" alt=""></a>
+        <span style="display: flex; align-items: center; justify-content: center;" onclick="openNav()"><img id="menuOpen" src="/Static/Images/menuIcon.png" alt=""></a></span>
+        <a style="display: flex; align-items: center;" href="index.html" class="testoBase logo"><img style="height: 8vh;" src="/Static/Images/DVSlogo2022.png" alt=""></a>
     </div>
-        <div id="mySidenav" class="sidenav testoBase">
-           <a class="closeBtn" href="javascript:void(0)" onclick="closeNav()"><img style="width: 75%;" src="/Static/Images/menuIcon.png" alt=""></a> 
+        <div id="mySidenav" class="sidenav testoBase" style="width: 0px;">
+           <a class="closeBtn" href="javascript:void(0)" onclick="closeNav()"><img style="width: 4vh;" src="/Static/Images/menuIcon.png" alt=""></a> 
            <div class="navCurt">
+            <a class="sidebarLink" href="noleggio.html">Noleggio</a>
             <a class="sidebarLink" href="index.html">Chi Siamo</a>
             <a class="sidebarLink" href="servizi.html">Servizi</a>
             <a class="sidebarLink" href="dovesiamo.html">Dove Siamo</a>
-            <a class="sidebarLink" href="noleggio.html">Noleggi</a>
             <a class="sidebarLink" href="contatti.html">Contatti</a>
            </div>
           </div>
 
 
     <div class="intro introNol">
-        <div class="logo" style="color: black;">NOLEGGI</div>
+        <div class="logo" style="color: black;">NOLEGGIO</div>
     </div>
 
    
     <div class="noleggi">
-            <form class="noleggiForm" action="">
-                <div style="font-size:xx-large;" class="testoBase titNoleggi">RICHIEDI IL TUO PREVENTIVO</div>
-                <select style="font-size: large;" class="testoBase noleggiInput" name="tipologia" id="">
+            <form class="noleggiForm" action="https://api.web3forms.com/submit" method="POST">
+                <div style="color: #b40000;" class="testoBase titNoleggi">RICHIEDI IL TUO PREVENTIVO</div>
+                <input type="hidden" name="access_key" value="b8e26d2f-22db-43af-ab7a-eab70c5fc832">
+                <select style="width: 82vh;" class="testoBase noleggiInput" name="tipologia" id="">
                     <option value="">Scegli la tipologia</option>
                     <option value="">Nuovo</option>
                     <option value="">Ricondizionato</option>
                 </select>
 
-                <input style="font-size: large;" type="text" name="nome" placeholder="Nome oppure Ragione Sociale" class="testoBase noleggiInput" required>
+                <input type="text" name="nome" placeholder="Nome oppure Ragione Sociale" class="testoBase noleggiInput" required>
 
-                <input style="font-size: large;" type="tel" name="telefono" placeholder="Numero telefonico" class="testoBase noleggiInput" required>
+                <input type="tel" name="telefono" placeholder="Numero telefonico" class="testoBase noleggiInput" required>
 
-                <input style="font-size: large;" type="email" name="email" placeholder="Email" class="testoBase noleggiInput" required>
+                <input type="email" name="email" placeholder="Email" class="testoBase noleggiInput" required>
 
-                <select style="font-size: large;" class="testoBase noleggiInput" name="tipoColore" id="">
+                <select style="width: 82vh;" class="testoBase noleggiInput" name="tipoColore" id="">
                     <option value="">Scegli il colore</option>
                     <option value="">Bianco/Nero</option>
                     <option value="">Colore</option>
                 </select>
 
-                <textarea style="font-size: large; padding-bottom: 15vh;" class="testoBase noleggiInput" name="info" placeholder="Informazioni aggiuntive" id=""></textarea>
-                <button style="width: 10%; font-size: large;" class="testoBase btnNol" type="submit">Invia</button>
+                <textarea style="padding-bottom: 15vh;" class="testoBase noleggiInput" name="info" placeholder="Informazioni aggiuntive" id=""></textarea>
+                <button style="width: 10%;" class="testoBase btnNol" type="submit">Invia</button>
             </form>
 
             <div class="formIMG">
@@ -64,32 +66,40 @@
     </div>
 
     <div class="noleggiFAQ">
-    
-        <div class="FAQ">
+        <div class="testoBase" style="font-weight: bold; font-size: 4vh;">Domande Frequenti</div>
+        <div class="FAQ testoBase">
 
-            <div class="domanda">
-            </div>
+            <details>
+                <summary>Cos'è possibile noleggiare?</summary>
+                <p>Si possono noleggiare tutti i prodotti così detti beni strumentali, nuovi di fabbrica oppure usati, purché funzionanti</p>
+            </details>
 
-            <div class="domanda">
+            <details>
+                <summary>A chi è possibile noleggiare?</summary>
+                <p>Le aziende di qualsiasi natura giuridica Professionisti iscritti all’albo tutti i possessori di partita IVA</p>
+            </details>
 
-            </div>
+            <details>
+                <summary>Come funziona?</summary>
+                <p>Il cliente non acquista il bene strumentale ma lo noleggia per un tempo prestabilito. Di solito il noleggio a 48 mesi garantisce che il bene non sia superato tecnologicamente. Infatti il noleggio consente l’adeguamento tecnologico e lo sviluppo / crescita da parte dell’utilizzatore</p>
+            </details>
 
-            <div class="domanda">
+            <details>
+                <summary>Per quali prodotti?</summary>
+                <p>Nel nostro caso per tutti quei prodotti che prevedono interventi manutentivi, aggiornamenti di software o aggiunta di accessori. Quindi: copiatrici, stampanti, multifunzioni, pc, server ecc… In pratica sono noleggiabili tutti i beni mobili definibili strumenti allo svolgimento delle attività produttive di tutti i possessori di partita IVA.</p>
+            </details>
 
-            </div>
+            <details>
+                <summary>Vantaggi fiscali e amministrativi</summary>
+                <p>I canoni di noleggio sono deducibili al 100% dalle imposte, compresa l’Iva. C’è anche la completa deducibilità ai fini Irap. Infatti, il mancato riscatto consente di portare in deduzione tutti i canoni durante l’anno solare o l’anno finanziario.
 
-            <div class="domanda">
+                    I beni noleggiati non devono essere messi a cespite ne seguire piani ci ammortamenti, cosa che bisogna fare quando si acquistano o si prendono in leasing. Non essendoci il riscatto, non ci sono ne plusvalenze ne minusvalenze.</p>
+            </details>
 
-            </div>
-
-            <div class="domanda">
-
-            </div>
-
-            <div class="domanda">
-
-            </div>
-
+            <details>
+                <summary>Vantaggi finanziari</summary>
+                <p>Il ricorso al noleggio, grazie ai costi certi e programmati, semplifica gli investimenti, migliora i flussi di cassa ed agevola la pianificazione finanziaria. Non è richiesto nessun investimento iniziale, il canone di noleggio è sempre a tasso fisso, il bene non subisce nessun deprezzamento e non c’è obbligo di riscatto. Inoltre la finanziaria non deve fare nessuna segnalazione in centrale rischi di Banca d’Italia lasciando così inalterate le disponibilità delle normali fonti di finanziamento.</p>
+            </details>
         </div>
 
     </div>

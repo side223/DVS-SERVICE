@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700&display=swap');
+@import url('https://kit.fontawesome.com/yourcode.js');
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+::placeholder {
+  color: #b40000;
+  opacity: 1;
+}
 
 .testoBase{
   font-family: 'Nunito', sans-serif;
+  font-size: 3vh;
 }
 
 body{
@@ -11,7 +22,7 @@ body{
 
 .navbar{
   width: 100%;
-  height: 5rem;
+  height: 8vh;
   background-color: #b40000;
   display: flex;
   align-items: center;
@@ -19,11 +30,13 @@ body{
 }
 
 #menuOpen{
-  width: 75%;
+  width: 4vh;
   transition: 0.3s;
   cursor: pointer;
   position: relative;
   visibility: visible;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 
 #menuOpen:hover{
@@ -46,7 +59,7 @@ body{
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 30vh;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -61,28 +74,28 @@ body{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    font-size: x-large;
+    font-size: 8vh;
     font-family: 'Nunito', sans-serif;
   }
 
   .sidebarLink {
-    padding-left: 1rem ;
-    margin-bottom: 3rem;
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 3vh;
     color: white;
     display: block;
-    transition: 0.3s;
     font-weight: 600;
+    width: fit-content;
   }
   
   .sidebarLink:hover {
     color: black;
-    border-left: solid 5px white;
+    border-bottom: solid 5px white;
   }
   .navCurt{
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding-top: 10vh;
+    padding-left: 2vh;
   }
   
   .closeBtn {
@@ -145,8 +158,8 @@ body{
   .introNol{
     background-position-x: center;
     background-position-y: 80%;
-    background-image: url(/Static/Images/noleggio.png);
-    background-size: 50%;
+    background-image: url(/Static/Images/pexels-norma-mortenson-4391470.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(22, 22, 22);
   }
@@ -159,6 +172,9 @@ body{
   .contatti{
     height: fit-content;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .dovesiamo{
@@ -169,12 +185,13 @@ body{
   .contattiGrid{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
   }
 
   .IconCont{
-    width: 3rem;
+    width: 5rem;
     padding-right: 2rem;
   }
 
@@ -206,13 +223,14 @@ body{
   }
 
   video{
-    border: solid 2px black;
+    border-radius: 35px;
   }
 
   .videoCont{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2vh;
   }
   
   .servizi{
@@ -244,18 +262,22 @@ body{
   }
 
   .noleggiInput{
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 1.5vh;
+    padding-left: 1vh;
     height: 4vh;
     width: 80vh;
-    border: solid 2px black;
+    border: solid 6px #b40000;
+    font-size: 2vh;
+    color: #b40000;
+    
   }
 
   .formIMG{
     background-color: transparent;
     width: 80vh;
     height: 60vh;
-    background-image: url(/Static/Images/360_F_184145408_AJ8fpPSNhlAWWDeccmpru57nPIqbxWxx.jpg);
+    background-image: url(/Static/Images/noleggio.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -265,8 +287,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 4vh;
-    margin-bottom: 5vh;
   }
   
   .titNoleggi{
@@ -276,40 +298,111 @@ body{
 
   .btnNol{
     width: 10vh;
-    border-radius: 8px;
-    border: solid 2px black;
+    border-radius: 10px;
+    border: solid 6px #b40000;
     height: 4vh;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 2vh;
+    background-color: #b40000;
+    color: white;
   }
 
   .btnNol:hover{
     transition: 0.3s;
-    background-color:#b40000;
+    background-color: white;
     cursor: pointer;
+    color: #b40000;
   }
 
   .noleggiFAQ{
-  width: 100%;
-  margin-top: 10vh;
-  display: flex;
-  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
   }
 
   .FAQ{
-    background-color: rgb(22, 22, 22);
+    background-color: white;
     width: 100%;
-    height: 70vh;
-    margin-left: 20vh;
-    margin-right: 20vh;
-    border-radius: 25px;
-    margin-bottom: 5vh;
+    height: fit-content;
     display: grid;
+    grid-template-areas: 
+        "domanda  domanda"
+        "domanda  domanda"
+        "domanda  domanda"
+    ;
+    gap: 2vh;
+    padding: 10vh 2vh 10vh 2vh;
+    align-items: center;
+    justify-content: center;
   }
 
   .domanda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #b40000;
     border-radius: 25px;
+    padding: 1vh;
+    text-align: left;
+    font-size: 2vh;
+    font-weight: bold;
+    vertical-align: middle;
+    color: white;
+  }
+
+  .btnDomanda{
+    width: 3vh;
+    height: 3vh;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #b40000;
+    cursor: pointer;
+  }
+
+  details{
+   background-color: #b40000;
+   color: white;
+   font-size: 2vh;
+   border-radius: 20px;
+   width: 40vh;
+  }
+
+  summary{
+    background-color: #b40000;
+    color: white;
+    border-radius: 20px;
+    font-size: 2vh;
+    font-weight: bold;
+    border: 6px solid #b40000;
+    border-bottom: 10px solid #b40000;
+    padding: 1vh;
+    cursor: pointer;
+    
+  }
+
+  details p{
+    padding: 1vh;
+    margin-top: 0vh;
+    
+  }
+
+  summary:hover{
+    transition: 0.3s;
+    background-color: white;
+    color: #b40000;
+  }
+
+  .titServizi{
+    font-size: 4vh;
+    color: #b40000;
+    font-weight: bold;
   }
 
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -330,85 +423,21 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: #b40000;
-    height: 6rem;
+    height: fit-content;
     font-size: 30%;
     font-family: 'Nunito', sans-serif;
 }
 
 .testoCopyright{
     text-align: center;
-    font-size: 30px;
+
 }
 
 .copyright{
     color: white;
-    font-size: small;
     text-align: center;
+    font-size: 1.2vh;
+    margin: 0.5vh;
 }
 
-/* MEDIA QUERY */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-  .logo{
-    font-size: 48px;
-  }
-
-  .testoBase{
-    font-size: 20px;
-  }
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-  .logo{
-    font-size: 64px;
-  }
-
-  .testoBase{
-    font-size: 22px;
-  }
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-  .logo{
-    font-size: 68px;
-  }
-
-  .testoBase{
-    font-size: 26px;
-  }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-  .logo{
-    font-size: 72px;
-  }
-
-  .testoBase{
-    font-size: 30px;
-  }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  .logo{
-    font-size: 76px;
-  }
-
-  .testoBase{
-    font-size: 24px;
-  }
-
-}
